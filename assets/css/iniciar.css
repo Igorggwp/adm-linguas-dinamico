@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+    text-decoration: none;
+    font-family: Nunito, sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    /* COLOR - CORES DO ARQUIVO  */
+    --white: rgba(255, 250, 251, 1);
+    --blue: rgba(27, 41, 115, 1);
+    --blue-contrast: rgb(18, 28, 75);
+    --cyan: rgba(185, 211, 220, 1);
+    --red: rgba(231, 48, 57, 1);
+    --red-contrast: rgb(132, 23, 29);
+    --yellow: rgba(254, 193, 1, 1);
+    --black: rgba(18, 23, 28, 1);
+
+    /* FONT FAMILY - FAMILIA DA FONTE */
+    --fonte: "Nunito", sans-serif;
+
+    /* FONT WEIGHT - PESO DA FONTE - ´alterar link ref em caso de mudança' */
+    --fw-200: 200;
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-800: 800;
+
+    /* FONT SIZE - TAMANHOS DA FONTE EM rem */
+    --fs-10: 0.625; 
+    --fs-12: 0.75; 
+    --fs-18: 1.125; 
+    --fs-20: 1.25rem; 
+    --fs-24: 1.5rem; 
+    --fs-28: 1.75rem; 
+    --fs-30: 1.875rem; 
+    --fs-38: 2.375rem; 
+    --fs-40: 2.5rem; 
+    --fs-48: 3rem; 
+}
+
+/* DEFINIÇÃO DO PLANO DE FUNDO */
+
+body{
+    background-image: url('../img/backgrounds/papel_de_parede_azul.svg');
+    font-family: var(--fonte);
+    color: var(--white);
+    font-size: var(--fs-18);
+    font-weight: var(--fw-300);
+    line-height: 1.0;
+    min-height: 100vh;
+}
+
+/*
+ul {
+    list-style: none; 
+} */
+
+/* DEFINIÇÃO DE DESTAQUES DO TEXTO */
+
+strong{
+    color: var(--yellow);
+}
+
+span{
+    color: var(--yellow);
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    min-height: 50px;
+}
+
+.box-img-header img{
+    width: 350px;
+}
+
+
+nav{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header nav a {
+    user-select: none;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.nav-links:hover{
+    color: var(--cyan);
+    transition: .4s;
+    text-decoration: underline;
+}
+
+
+/* MAIN */
+
+.main-title {
+    text-align: center;
+    font-size: var(--fs-40);
+    color: var(--white);
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+}
+
+.main-subtitle {
+    text-align: center;
+    font-size: var(--fs-24);
+    color: var(--white);
+    margin-bottom: 6%;
+}
+
+.language-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.language-button {
+    text-decoration: none;
+}
+
+.red-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: var(--fs-24);
+    font-weight: var(--fw-700);
+    color: var(--white);
+    cursor: pointer;
+    background-color: var(--red);
+    margin: 0 80px;
+}
+
+.red-box:hover {
+    opacity: 0.8;
+}
+
+.red-box span {
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: var(--white);
+    padding: 90px 0;
+    margin-top: 10rem;
+}
+
+.container-footer{
+    max-width: 1170px;
+    background-color: var(--white);
+    margin: auto;
+}
+
+.linha-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 20%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: var(--fs-20);
+    color: var(--blue);
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: var(--fw-500);
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--red);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+
+}
+
+.footer-col ul li a{
+    font-size: var(--fs-18);
+    text-transform: capitalize;
+    color: var(--black);
+    text-decoration: none;
+    font-weight: var(--fw-400);
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    text-decoration: underline;
+}
+
