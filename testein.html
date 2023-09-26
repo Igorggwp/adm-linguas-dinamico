@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="./assets/css/quiz.css">
+    <link rel="stylesheet" href="./assets/css/teste.css">
     <link rel="stylesheet" href="./assets/css/media.css">
 
     <title>Centro de Línguas</title>
@@ -36,29 +36,52 @@
     <!-- Main -->
 
     <main>
-        <div class="main-content">
-            <h1 class="main-title">Selecione o idioma para o <Strong>Teste</Strong></h1>
-            <h2 class="main-subtitle">Domine uma nova língua e conquiste o mundo!</h2>
-            <div class="language-buttons">
-                <a href="testein.html" class="language-button">
-                    <div class="red-box">
-                        INGLÊS
-                    </div>
-                </a>
-                <a href="testees.html" class="language-button">
-                    <div class="red-box">
-                        ESPANHOL
-                    </div>
-                </a>
-                <a href="testefr.html" class="language-button">
-                    <div class="red-box">
-                        FRANCÊS
-                    </div>
-                </a>
+        <div class="container">
+            <div id="quiz" class="hide">
+                <div id="progress-text">1/4</div>
+                <div class="progress-bar">
+                    <div id="progress"></div>
+                </div>
+                <h2 id="pergunta"></h2>
+                <div id="answer-button">
+                    <button class="btn btn-unselected">Resposta 1</button>
+                    <button class="btn btn-unselected">Resposta 2</button>
+                    <button class="btn btn-unselected">Resposta 3</button>
+                    <button class="btn btn-unselected">Resposta 4</button>
+                </div>
+                <div class="submit-buttons">
+                    <button id="back-btn">Anterior</button>
+                    <button id="next-btn">Próximo</button>
+                </div>
+            </div>
+            <div id="finish" class="hide">
+                <h1>Deseja terminar o teste?</h1>
+                <div>
+                    <button id="back-question">Voltar</button>
+                    <button id="finish-btn">Terminar</button>
+                </div>
+            </div>
+            <div>
+                <div id="result" class="hide">
+                    <section class="resultado">
+                        <div class="result-content1">
+                            <h1>ACERTOS</h1>
+                            <div id="result-bar"></div>
+                            <h2 id="result-text"></h2>
+                        </div>
+                        <div class="result-content2">
+                            <h1>SEU NÍVEL PODE SER:</h1>
+                            <div id="result-nivel"></div>
+                            <p id="nivel-text"><strong></strong> </p>
+                        </div>
+                    </section>
+    
+                    <a href="../index.html"><button id="restart-btn">Retornar a página principal</button></a>
+                </div>
             </div>
         </div>
     </main>
-
+    
     <!-- Inicio footer -->
 
     <footer>
@@ -130,24 +153,8 @@
         </div>        
     </footer>
 
-    <script src="./src/goToTop.js"></script>
-    <script src="./src/accordionEvent.js"></script>
+    <script src="./src/testein.js"></script>
 
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
