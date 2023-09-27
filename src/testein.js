@@ -92,7 +92,7 @@ const questions = [
         ]
     },
     {
-        question: "Qual é o passado simples da palavra 'read'",
+        question: "Qual é a forma correta do tempo condicional perfeito em inglês para a frase: 'Se eu soubesse, teria te ajudado'?",
         answers: [
             { text: "Known", correct: false },
             { text: "Helped", correct: false },
