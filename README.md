@@ -1,1 +1,0 @@
-# Linguas-Dinamico
