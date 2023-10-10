@@ -1,7 +1,7 @@
 export default {
     name: 'eventos',
     type: 'document',
-    title: 'Eventos',
+    title: 'Cadastro de Eventos',
     fields: [
       {
         name: 'evento',

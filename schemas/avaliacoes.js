@@ -1,7 +1,7 @@
 export default {
     name: 'avaliacoes',
     type: 'document',
-    title: 'Avaliacoes',
+    title: 'Cadastro de Avaliacoes',
     fields: [
       {
         name: 'nota',
@@ -22,6 +22,11 @@ export default {
         name: 'opiniao',
         type: 'string',
         title: 'Opiniao'
+      },
+      {
+        name: 'imagem_avalicao',
+        type: 'image',
+        title: 'Imagem do Avaliador'
       }
     ]
   }

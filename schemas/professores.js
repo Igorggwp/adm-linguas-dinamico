@@ -6,7 +6,7 @@ export default {
       {
         name: 'novo_professor',
         type: 'string',
-        title: 'Novo Professor'
+        title: 'Cadastro de Professor'
       },
       {
         name: 'disciplina',

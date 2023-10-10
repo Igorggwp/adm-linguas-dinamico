@@ -1,7 +1,7 @@
 export default {
     name: 'coordenacao',
     type: 'document',
-    title: 'Coordenacao',
+    title: 'Cadastro de Coordenador',
     fields: [
       {
         name: 'coordenacao',
