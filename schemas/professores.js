@@ -1,12 +1,12 @@
 export default {
     name: 'professor',
     type: 'document',
-    title: 'Professor',
+    title: 'Cadastro de Professor',
     fields: [
       {
         name: 'novo_professor',
         type: 'string',
-        title: 'Cadastro de Professor'
+        title: 'Novo Professor'
       },
       {
         name: 'disciplina',
