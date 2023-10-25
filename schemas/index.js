@@ -10,5 +10,13 @@ import avaliacoes from './avaliacoes'
 
 import faq from './faq'
 
-export const schemaTypes = [cursos, eventos, coordenacao, professor, avaliacoes, faq]
+import resposta from './resposta'
+
+import perguntasIN from './perguntasIN'
+
+import perguntasES from './perguntasES'
+
+import perguntasFR from './perguntasFR'
+
+export const schemaTypes = [cursos, eventos, coordenacao, professor, avaliacoes, faq, resposta, perguntasIN, perguntasES, perguntasFR]
 
