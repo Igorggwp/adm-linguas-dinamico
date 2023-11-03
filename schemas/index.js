@@ -18,5 +18,4 @@ import perguntasES from './perguntasES'
 
 import perguntasFR from './perguntasFR'
 
-export const schemaTypes = [cursos, eventos, coordenacao, professor, avaliacoes, faq, resposta, perguntasIN, perguntasES, perguntasFR]
-
+export const schemaTypes = [avaliacoes, coordenacao, cursos, eventos, faq, professor, resposta, perguntasIN, perguntasES, perguntasFR ]

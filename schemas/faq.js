@@ -1,7 +1,7 @@
 export default {
     name: 'faq',
     type: 'document',
-    title: 'Cadastro de Perguntas',
+    title: 'Cadastro FAQ',
     fields: [
       {
         name: 'pergunta',

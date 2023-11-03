@@ -1,6 +1,6 @@
 export default {
   name: 'perguntasIN',
-  title: 'Perguntas de Inglês',
+  title: 'Adcionar Perguntas (Inglês)',
   type: 'document',
   fields: [
     {
