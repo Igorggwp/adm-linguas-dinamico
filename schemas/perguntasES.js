@@ -10,7 +10,7 @@ export default {
     },
     {
       name: 'respostas',
-      title: 'Respostas',
+      title: 'Respostas ( Recomendado 4 alternativas )',
       type: 'array',
       of: [{ type: 'resposta' }],
     },
